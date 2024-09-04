@@ -1,0 +1,242 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/*========== HEADER ==========*/
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image: url('images/wood-bg.png');
+    background-repeat: repeat-x;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added a subtle shadow for depth */
+}
+
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
+
+/*========== TOP-TABS ==========*/
+
+#tabs-top{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for separation */
+}
+
+#tabs-top a{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    transition: background-color 0.3s; /* Added a transition effect */
+}
+
+#tabs-top a:hover{
+    background-color: #006400; /* Darker green on hover */
+}
+
+/*========== MAIN-HOME ==========*/
+
+#main-home{
+    margin-top: 120px;
+}
+
+/*========== BOTTOM-TABS ==========*/
+
+#tabs-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for separation */
+}
+
+#tabs-bottom a{
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    transition: background-color 0.3s; /* Added a transition effect */
+}
+
+#tabs-bottom a:hover{
+    background-color: #228B22; /* Lighter green on hover */
+}
+
+/*========== MAIN ==========*/
+
+#main{
+    margin-top: 119px;
+    background: url('images/map-blur.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/*========== CONTENT ==========*/
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+/*========== INFO BOX ==========*/
+
+a.info-box{
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+    border-radius: 10px; /* Added rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition effects */
+}
+
+a.info-box:hover{
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.info-box img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+    border-radius: 50%; /* Added circular image effect */
+}
+
+.info-box h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+    border-radius: 10px; /* Added rounded corners */
+}
+
+/*========== INFO-BOX-FULL ==========*/
+
+#info-box-full{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px; /* Added rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a shadow for depth */
+}
+
+#info-box-full img{
+    width: 100%;
+    border-radius: 10px; /* Added rounded corners */
+}
+
+#info-box-full h3{
+    text-align: center;
+}
+
+/*========== WEATHER ==========*/
+
+img.info-box-weather-icon{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    float: left;
+}
+
+h1.info-box-weather-icon{
+    font-size: 65px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+td{
+    border-top: 1px solid #131313;
+}
+
+/*========== FORM ==========*/
+
+input, textarea{
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+    border-radius: 5px; /* Added rounded corners */
+    padding: 5px;
+    font-family: inherit;
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+textarea{
+    height: 100px; /* Increased height for textareas */
+}
+
+.button{
+    display: block;
+    background-color: forestgreen;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 10px 0;
+    border-radius: 5px; /* Added rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Added transition effects */
+}
+
+.button:hover{
+    background-color: #228B22; /* Lighter green on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
